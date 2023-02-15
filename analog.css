@@ -139,7 +139,7 @@ button:focus {
     h2 {
 
 
-        letter-spacing: 5px;
+        letter-spacing: 2.5px;
         font-size: 15px;
 
 
@@ -153,17 +153,17 @@ button:focus {
 
     .container {
         position: absolute;
-        top: 12%;
-        left: 58%;
+        top: 20%;
+        left: 27%;
         transform: translate(60%, -70%);
 
     }
 
     .button.button {
 
-        width: 120px;
+        width: 100px;
         padding: 5px;
-        font-size: 10px;
+        font-size: 7px;
         font-family: poppins;
         /* font-weight: 20px; */
 
