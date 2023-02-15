@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background: url(https://images.unsplash.com/photo-1660380130383-7d639710b273?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDE0N3w2c01WalRMU2tlUXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    overflow: hidden;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 18px;
+    font-size: 20px;
+    text-align: center;
+    color: bisque;
+    height: 50px;
+
+
+
+}
+
+.clock {
+    display: flex;
+
+}
+
+.clock div {
+    margin: 5px;
+    position: relative;
+}
+
+.clock span {
+    width: 100px;
+    height: 80px;
+    background-color: rgb(100, 100, 180);
+    opacity: .8;
+    color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+.clock .text {
+    height: 30px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: darkblue;
+    opacity: .80;
+
+}
+
+.clock #ampm {
+    bottom: 0;
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    font-size: 20px;
+    background: rgb(15, 66, 53);
+}
+
+.container {
+    position: absolute;
+    top: 80%;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+
+}
+
+.button.button {
+    color: #060314;
+    position: relative;
+    text-align: center;
+    background-color: rgb(84, 138, 97);
+    width: 180px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: poppins;
+    /* font-weight: 20px; */
+    border: 3px solid#15f4ee;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: 1.5s;
+}
+
+@media only screen and (max-width: 600px) {
+    h2 {
+        letter-spacing: 9px;
+        font-size: 10px;
+    }
+
+    .clock span {
+        width: 50px;
+        height: 40px;
+        font-size: 20px;
+
+    }
+
+    .clock .text {
+        height: 15px;
+        font-size: 5px;
+
+        letter-spacing: 2px;
+
+    }
+
+    .clock #ampm {
+        bottom: 0;
+
+        width: 30px;
+        height: 15px;
+        font-size: 15px;
+
+    }
+
+    body {
+        height: 50vh;
+
+    }
+
+    .container {
+
+        top: 45%;
+        left: 49.5%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .button.button {
+
+        width: 90px;
+        padding: 5px;
+        font-size: 10px;
+        letter-spacing: 0.5px;
+
+    }
+
+}

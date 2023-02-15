@@ -1,0 +1,181 @@
+body {
+    /* background-color: black; */
+    /* height: 50px; */
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right,
+            rgb(17, 6, 46) 0%,
+            rgb(180, 110, 19) 50%,
+            rgb(180, 110, 19) 50%,
+            rgb(32, 10, 92) 100%);
+}
+
+/* .div.clocks {
+    display: flex;
+    letter-spacing: 18px;
+    height: 50px; */
+/* } */
+
+h2 {
+
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: bisque;
+    text-shadow: 2px 2px 2px #11f3e8;
+
+
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    ;
+}
+
+.main {
+    display: flex;
+    padding: 2em;
+    height: 90vh;
+    justify-content: center;
+    align-items: middle;
+}
+
+.clockbox,
+#clock {
+    width: 100%;
+}
+
+/* Clock styles */
+.circle {
+    fill: none;
+    stroke: #0dfa21;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #0dfa21;
+}
+
+.mid-circle {
+    fill: #0cf50c;
+}
+
+.hour-marks {
+    fill: none;
+    stroke: #0dfa21;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+
+.hour-arm {
+    fill: none;
+    stroke: #0dfa21;
+    stroke-width: 17;
+    stroke-miterlimit: 10;
+}
+
+.minute-arm {
+    fill: none;
+    stroke: #0dfa21;
+    stroke-width: 11;
+    stroke-miterlimit: 10;
+}
+
+.second-arm {
+    fill: none;
+    stroke: #0dfa21;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+
+/* Transparent box ensuring arms center properly. */
+.sizing-box {
+    fill: none;
+}
+
+/* Make all arms rotate around the same center point. */
+/* Optional: Use transition for animation. */
+#hour,
+#minute,
+#second {
+    transform-origin: 300px 300px;
+    /* transition: transform .5s ease-in-out; */
+}
+
+.container {
+    position: absolute;
+    top: 10%;
+    left: 48%;
+    transform: translate(100%, -100%);
+
+}
+
+.button.button {
+    color: #11f3e8;
+    position: relative;
+    text-align: center;
+    background-color: rgb(50, 21, 90);
+    width: 300px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: poppins;
+    /* font-weight: 20px; */
+    border: 3px solid#11deec;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    border-radius: 100px;
+    box-shadow: 5px 5px 3px #11deec;
+    min-height: 30px;
+    min-width: 120px;
+    transition: 1.5s;
+
+}
+
+button:focus {
+    outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+    h2 {
+
+
+        letter-spacing: 5px;
+        font-size: 15px;
+
+
+
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        ;
+    }
+
+
+    .container {
+        position: absolute;
+        top: 12%;
+        left: 58%;
+        transform: translate(60%, -70%);
+
+    }
+
+    .button.button {
+
+        width: 120px;
+        padding: 5px;
+        font-size: 10px;
+        font-family: poppins;
+        /* font-weight: 20px; */
+
+        border-radius: 100px;
+        box-shadow: 2.5px 2.5px 1.5px #11deec;
+        min-height: 15px;
+        min-width: 60px;
+        transition: 1.5s;
+
+    }
+
+    .main {
+        height: 45vh;
+    }
+}
