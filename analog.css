@@ -154,7 +154,7 @@ button:focus {
     .container {
         position: absolute;
         top: 20%;
-        left: 27%;
+        left: 16%;
         transform: translate(60%, -70%);
 
     }
